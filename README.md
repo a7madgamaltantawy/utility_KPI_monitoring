@@ -7,7 +7,7 @@ raw data → ETL → validation → SQLite database → KPI mart → API → das
 
 ---
 
-## 🎯 Business Objective
+##  Business Objective
 
 Monitor and benchmark distribution company performance using:
 
@@ -22,7 +22,7 @@ Monitor and benchmark distribution company performance using:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
     Raw Data (SCADA / OMS / Billing / Metering)
             ↓
@@ -38,7 +38,7 @@ Monitor and benchmark distribution company performance using:
 
 ---
 
-## 📊 Data Sources (Simulated)
+##  Data Sources (Simulated)
 
 - SCADA events
 - OMS outage reports
@@ -50,7 +50,7 @@ Monitor and benchmark distribution company performance using:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
     utility_kpi_monitoring_app/
     ├── backend/
@@ -64,7 +64,7 @@ Monitor and benchmark distribution company performance using:
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 Create virtual environment:
 
@@ -84,7 +84,7 @@ Install dependencies:
 
 ---
 
-## ▶️ Run the Project
+##  Run the Project
 
 1. Generate raw data
 
@@ -112,7 +112,7 @@ Open API docs:
 
 ---
 
-## 📐 KPI Formulas
+##  KPI Formulas
 
 SAIDI
 
@@ -140,7 +140,7 @@ Collection Efficiency %
 
 ---
 
-## 🗄️ Database Design
+##  Database Design
 
 Main Layers
 
@@ -161,7 +161,7 @@ SQL Views
 
 ---
 
-## 📊 Dashboard Features
+##  Dashboard Features
 
 - Executive KPI overview
 - SAIDI / SAIFI trends
@@ -171,14 +171,14 @@ SQL Views
 
 ---
 
-## 🧠 Interview Explanation
+##  Interview Explanation
 
 I built a full KPI monitoring pipeline for distribution utilities.
 The system ingests multi-source data (SCADA, OMS, billing), validates it, calculates KPIs such as SAIDI and losses, stores them in a structured SQLite data mart, exposes them via FastAPI, and visualizes them in a Streamlit dashboard for benchmarking and decision support.
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - Synthetic data (not real utility data)
 - Simplified technical loss estimation
@@ -189,7 +189,7 @@ The system ingests multi-source data (SCADA, OMS, billing), validates it, calcul
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Replace SQLite with PostgreSQL / cloud warehouse
 - Add feeder-level drill-down
