@@ -171,29 +171,11 @@ SQL Views
 
 ---
 
-##  Interview Explanation
-
-I built a full KPI monitoring pipeline for distribution utilities.
-The system ingests multi-source data (SCADA, OMS, billing), validates it, calculates KPIs such as SAIDI and losses, stores them in a structured SQLite data mart, exposes them via FastAPI, and visualizes them in a Streamlit dashboard for benchmarking and decision support.
-
----
-
 ##  Limitations
 
-- Synthetic data (not real utility data)
 - Simplified technical loss estimation
-- No real SCADA / MDMS integration
 - No real-time streaming
 - No authentication / security layer
-- SQLite used instead of production database
 
 ---
 
-## Future Improvements
-
-- Replace SQLite with PostgreSQL / cloud warehouse
-- Add feeder-level drill-down
-- Add geospatial visualization
-- Add anomaly detection for non-technical losses
-- Add Power BI dashboard
-- Integrate real APIs (SCADA / billing / MDMS)
